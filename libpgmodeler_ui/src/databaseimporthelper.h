@@ -27,7 +27,8 @@
 
 #include <QObject>
 #include <QThread>
-#include "catalog.h"
+#include "../../libpgconnector/src/catalog.h"
+//#include "catalog.h"
 #include "modelwidget.h"
 #include <random>
 

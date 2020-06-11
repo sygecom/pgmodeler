@@ -22,6 +22,10 @@
 #include "metadatahandlingform.h"
 #include "sqlexecutionwidget.h"
 
+#ifndef NO_UPDATE_CHECK
+ #define NO_UPDATE_CHECK
+#endif
+
 bool MainWindow::confirm_validation=true;
 int MainWindow::GeneralActionsCount=0;
 
@@ -268,7 +272,7 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags) : QMainWindow(par
 	window_title+=tr(" (Demo)");
 #endif
 
-	this->setWindowTitle(window_title);
+	this->setWindowTitle(tr(" Sygecom - ")+window_title);
 
 	current_model=nullptr;
 	models_tbw->setVisible(false);
@@ -452,7 +456,7 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags) : QMainWindow(par
 	  this->setWindowState(Qt::WindowMaximized);
 
 #ifdef NO_UPDATE_CHECK
-#warning "NO UPDATE CHECK: Update checking is disabled."
+//#warning "NO UPDATE CHECK: Update checking is disabled."
 #else
 	//Enabling update check at startup
 	if(confs[Attributes::Configuration][Attributes::CheckUpdate]==Attributes::True)

@@ -1,0 +1,44 @@
+Links para ajuda:
+https://tomthegeek.blogspot.com/2016/06/how-to-compile-pgmodeler-82-for-win7.html
+https://sudonull.com/post/11139-Build-pgModeler
+https://medium.com/@mglaving/how-to-run-pgmodeler-0-9-2-on-raspberry-pi-4-ebbca63173cc
+https://www.pgmodeler.io/support/installation
+
+Libxml para 32 e 64 bbits:
+ftp://ftp.zlatkovic.com/libxml/64bit
+
+para comilar o projeto no windows usei:
+ftp://ftp.zlatkovic.com/libxml/64bit/old/libxml2-2.9.2-win32-x86.7z
+
+1-Alterar o arquivo pgmodeler.pri mais ou menos na linha 177 para os caminho:
+  !defined(PGSQL_LIB, var): PGSQL_LIB = D:/pgsql10_32bits/bin/libpq.dll
+  !defined(PGSQL_INC, var): PGSQL_INC = D:/pgsql10_32bits/include
+  !defined(XML_INC, var): XML_INC = D:/devel/libxml2-2.9.1-win32-x86/include/libxml2/libxml
+  !defined(XML_LIB, var): XML_LIB = D:/devel/libxml2-2.9.1-win32-x86/bin/libxml2-2.dll
+2-criar pasta em c:\pgmodeler
+3-abrir cmd como administrador e executar um por um dos comandos abaixo, dentro do projeto PGMODELER
+  SET PATH=%PATH%;D:\pgsql10_32bits\bin;D:\devel\qt5xhb\mingw\bin;D:\devel\qt5xhb\qt\bin
+  SET QT_ROOT=D:\devel\qt5xhb\qt\bin
+  qmake PREFIX+=D:/pgModeler -r  -spec win32-g++ CONFIG+=release  pgmodeler.pro
+  mingw32-make
+  mingw32-make install
+4-Pelo CMDN na pasta: C:\ pgModeler executar:
+  windeployqt pgmodeler.exe
+
+5-Agora copie essas DLLs abaixo para D:\pgModeler
+  DLLs PostgreSQL (D:\pgsql10_32bits\bin\)
+  libcrypto-1_1.dll   
+  libiconv-2.dll      
+  libintl-8.dll       
+  libpq.dll           
+  libssl-1_1.dll      
+  zlib1.dll           
+
+  DLLs QT (D:\devel\qt5xhb\qt\bin\)
+  Qt5Network.dll      
+  Qt5NetworkAuth.dll  
+  Qt5PrintSupport.dll 
+
+  Dll da LIBXML (D:\devel\libxml2-2.9.1-win32-x86\bin)
+  libxml2-2.dll       
+

@@ -9,6 +9,7 @@ DEPLOY_VER=`echo ${DEPLOY_VER/\",/} | tr -d ' '`
 
 DEMO_VERSION_OPT='-demo-version'
 DEMO_VERSION=0
+NO_UPDATE_CHECK=false
 
 BUILD_ALL_OPT='-build-all'
 BUILD_ALL=0

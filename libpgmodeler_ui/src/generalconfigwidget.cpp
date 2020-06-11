@@ -29,6 +29,10 @@
 #include "databaseimportform.h"
 #include "modelexportform.h"
 
+#ifndef NO_UPDATE_CHECK
+ #define NO_UPDATE_CHECK
+#endif
+
 map<QString, attribs_map> GeneralConfigWidget::config_params;
 map<QString, GeneralConfigWidget::WidgetState> GeneralConfigWidget::widgets_geom;
 

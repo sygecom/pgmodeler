@@ -26,7 +26,8 @@
 #define DATA_MANIPULATION_FORM_H
 
 #include "ui_datamanipulationform.h"
-#include "catalog.h"
+//#include "catalog.h"
+#include "../../libpgconnector/src/catalog.h"
 #include "syntaxhighlighter.h"
 #include "codecompletionwidget.h"
 #include "csvloadwidget.h"

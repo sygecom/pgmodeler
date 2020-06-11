@@ -18,7 +18,8 @@
 
 #include "objectsfilterwidget.h"
 #include "pgmodeleruins.h"
-#include "catalog.h"
+//#include "catalog.h"
+#include "../../libpgconnector/src/catalog.h"
 
 ObjectsFilterWidget::ObjectsFilterWidget(QWidget *parent) : QWidget(parent)
 {

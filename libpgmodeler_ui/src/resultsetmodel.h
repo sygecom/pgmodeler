@@ -27,7 +27,8 @@
 
 #include <QAbstractTableModel>
 #include "resultset.h"
-#include "catalog.h"
+//#include "catalog.h"
+#include "../../libpgconnector/src/catalog.h"
 
 class ResultSetModel: public QAbstractTableModel {
 	private:
