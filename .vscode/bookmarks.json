@@ -1,0 +1,67 @@
+[
+	{
+		"path": "$ROOTPATH$\\pgmodeler.pri",
+		"bookmarks": [
+			{
+				"line": 26,
+				"column": 51,
+				"label": ""
+			},
+			{
+				"line": 177,
+				"column": 0,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\libpgmodeler_ui\\src\\databaseimporthelper.h",
+		"bookmarks": [
+			{
+				"line": 30,
+				"column": 20,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\libpgmodeler_ui\\src\\updatenotifierwidget.cpp",
+		"bookmarks": [
+			{
+				"line": 36,
+				"column": 77,
+				"label": ""
+			},
+			{
+				"line": 107,
+				"column": 33,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\libpgmodeler_ui\\src\\mainwindow.cpp",
+		"bookmarks": [
+			{
+				"line": 268,
+				"column": 0,
+				"label": ""
+			},
+			{
+				"line": 458,
+				"column": 2,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\windeploy.sh",
+		"bookmarks": [
+			{
+				"line": 98,
+				"column": 37,
+				"label": ""
+			}
+		]
+	}
+]
