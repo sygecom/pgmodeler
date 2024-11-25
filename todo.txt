@@ -1,0 +1,6 @@
+1-Poder fazer restore ( linha de comando ) 
+2-Poder fazer backup ( linha de comando )
+3-No resultado de SQL mostra nos nomes das colunas o tipo de dados e tamanho dos campos
+4-Poder seleciona o ENCODING padrão dos resultados que vai mostrar nos GRID em vez de fixo UTF8
+5-Excluir ou renomear DATABASE
+6-

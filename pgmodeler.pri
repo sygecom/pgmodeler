@@ -264,8 +264,8 @@ macx {
 }
 
 windows {
-  !defined(PGSQL_LIB, var): PGSQL_LIB = C:/msys64/mingw64/bin/libpq.dll
-  !defined(PGSQL_INC, var): PGSQL_INC = C:/msys64/mingw64/include
+  !defined(PGSQL_LIB, var): PGSQL_LIB = D:/pg13/bin/libpq.dll
+  !defined(PGSQL_INC, var): PGSQL_INC = D:/pg13/include
   !defined(XML_INC, var): XML_INC = C:/msys64/mingw64/include/libxml2
   !defined(XML_LIB, var): XML_LIB = C:/msys64/mingw64/bin/libxml2-2.dll
   INCLUDEPATH += "$$PGSQL_INC" "$$XML_INC"
